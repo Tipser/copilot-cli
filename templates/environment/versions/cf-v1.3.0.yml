@@ -40,7 +40,7 @@ Resources:
   ServiceDiscoveryNamespace:
     Type: AWS::ServiceDiscovery::PrivateDnsNamespace
     Properties:
-        Name: !Sub ${AppName}.local
+        Name: !Sub ${AppName}.${EnvironmentName}.local
 {{- if .ImportVPC}}
         Vpc: {{.ImportVPC.ID}}
 {{- else}}

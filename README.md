@@ -1,3 +1,9 @@
+## Forked !
+
+This is forked repo.
+
+Info about the fork [click here](#fork-information).
+
 ## AWS Copilot CLI (preview) ![latest version](https://img.shields.io/github/v/release/aws/copilot-cli) [![Join the chat at https://gitter.im/aws/copilot-cli](https://badges.gitter.im/aws/copilot-cli.svg)](https://gitter.im/aws/amazon-ecs-cli-v2?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ###### _Develop, Release and Operate Container Apps on AWS._ 
 
@@ -86,3 +92,15 @@ If you think you’ve found a potential security issue, please do not post it in
 
 ## License
 This library is licensed under the Apache 2.0 License.
+
+## Fork information
+
+The fork was done to apply only one change: https://github.com/Tipser/copilot-cli/commit/ce4f56abb899dc0f329fc173545857dedc09ef1d
+
+The change is needed for case in Tipser specific setup, where same application, but different envs has to connect to the same VPC.
+
+The changed `copilot-cli` can be used together with GH action: `Tipser/setup-aws-copilot@v3`. 
+
+### How to install ?
+
+Download binaries from release with `-forked` suffix, e.g.`v1.4.0-forked`, or build the tool locally by yourself. 
